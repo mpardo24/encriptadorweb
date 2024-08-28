@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafío Cifrador</title>
+</head>
+<body>
+    <header>
+        <img class="logoPrincipal" src="imag/logogrande.png" alt="Logo Alura Latam">
+    </header>
+    <main>
+        <section class="bloque1">
+            <div class="contenedorTexto">
+                <textarea id="textoEntrada" class="areaTexto" placeholder="Ingresa el texto"></textarea>
+            </div>
+            <div class="contenedorBotonesAviso">
+                <div class="grupoBotones">
+                    <input onclick="cifrarTexto();" type="button" value="Cifrar" class="botonCifrar" id="botonCifrar">
+                    <input onclick="descifrarTexto();" type="button" value="Descifrar" class="botonDescifrar" id="botonDescifrar">
+                </div>
+                <div class="aviso">
+                    <img src="imag/exclama.png" alt="icono de aviso">
+                    <p class="textoAviso">Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+        </section>
+        <section class="bloque2">
+            <div class="contenedorFigura" id="contenedorFigura">
+                <img src="imag/lupa.png" alt="Figura" id="figura">
+                <p class="resultadoTexto" id="resultadoTexto"></p>
+            </div>
+            <div class="mensajes" id="mensajes">
+                <h1>Ningún mensaje fue<br>encontrado</h1>
+                <p>Ingresa el texto que desees cifrar o descifrar</p>
+            </div>
+            <div class="grupoBotonAccion">
+                <input onclick="copiarTexto();" type="button" value="Copiar" class="botonCopiarTexto" id="botonCopiarTexto">
+                <input onclick="limpiarCampos();" type="button" value="Limpiar" class="botonLimpiarTexto" id="botonLimpiarTexto">
+            </div>
+            <div class="mostrarTextoResultado">
+                <p class="resultadoTexto"></p>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
